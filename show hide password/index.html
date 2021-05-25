@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://kit.fontawesome.com/a076d05399.js"></script>
+    <title>show hide password</title>
+    <style>
+        body{
+             width: 100%;
+             height: 100vh;
+             display: grid;
+             place-items: center;
+             background: #b4c0cb;
+        }
+        input{
+            width: 700px;
+            border: none;
+            outline: none;
+            padding: 20px 50px;
+            font-size: 28px;
+            font-weight: 600;
+            color: #1577e0;
+            border-radius: 40px;
+            background: #b4c0cb;
+            box-shadow: 7px 7px 6px #949da6,
+            -7px -7px 6px #d4e3f0;
+        }
+        input::placeholder{
+            color: #1577e0;
+            font-weight: 500;
+        }
+        #icon{
+            position: absolute;
+            top: 310px;
+            right: 24%;
+            font-size: 40px;
+            color: #1577e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <i class="fa fa-eye-slash" id="icon" onclick="toggle()"></i>
+        <input type="password" id="pswrd" placeholder="password">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
